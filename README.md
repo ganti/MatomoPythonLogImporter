@@ -1,17 +1,15 @@
 # MatomoPythonLogImporter
 Import logfiles without duplicates
 
-# Welcome to StackEdit!
-
 [Matomo](https://matomo.org) is an open source web analytics tool, which is a self-hosted alternative to Google Analytics and allows anonymization of user data. 
 
 There are multiple ways to input data into Matomo: javascript in the browser, tracking pixel and the direct import of log files from the server (e.g. apache, nginx).
 
+## What does this tool
+
 To import log files into Matomo, there is an import script [`import_logs.py`](https://matomo.org/docs/log-analytics-tool-how-to). 
 Unfortunately there is one problem with this method: The import script just imports a logfile, but does not check if the data is allready in the Matomo Database. 
 This tool, is the link between your log files and `import_logs.py`
-
-## What does this tool
 
 MatomoPythonLogImporter checks if there is new data in the logfile, and only submits new data to Matomo.
 
