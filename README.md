@@ -20,7 +20,7 @@ MatomoPythonLogImporter checks if there is new data in the logfile, and only sub
 2. Edit the paths in [`config.sh`](https://github.com/ganti/MatomoPythonLogImporter/blob/main/config.sh)
 
 3. Edit [`config_matomo.config`](https://github.com/ganti/MatomoPythonLogImporter/blob/main/config_matomo.config)
-The format should be `{website.log}={MatomoSiteID}` . It is possibile to connect multiple log files to one Matomo [Site ID](https://matomo.org/faq/general/faq_19212/) 
+The format should be `{logfilename}={MatomoSiteID}` . It is possibile to connect multiple log files to one Matomo [Site ID](https://matomo.org/faq/general/faq_19212/) 
 
 4. Set up a cronjob:  
 The following example runs the importer every 5 minutes
